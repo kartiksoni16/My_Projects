@@ -1,0 +1,208 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Header & Navbar Styling */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 40px;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ff6a00;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.nav-links a:hover {
+    color: #ff6a00;
+}
+
+/* Sections Styling */
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 20px;
+    text-align: center;
+    min-height: 80vh;
+    transition: all 0.3s ease;
+}
+
+.left-content {
+    flex: 1;
+    padding: 20px;
+    color: #fff;
+}
+
+.right-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.right-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.right-content img:hover {
+    transform: scale(1.05);
+}
+
+/* Haldi Section */
+.haldi {
+    background: linear-gradient(135deg, #ffeb3b, #ff9800);
+}
+
+.dj {
+    background: linear-gradient(135deg, #1e88e5, #2196f3);
+    color: white;
+}
+
+.ganeshpooja {
+    background: linear-gradient(135deg, #f44336, #e53946);
+    color: white;
+}
+
+.marriage {
+    background: linear-gradient(135deg, #4caf50, #388e3c);
+    color: white;
+}
+
+.dinner {
+    background: linear-gradient(135deg, #ff5722, #ff3d00);
+    color: white;
+}
+
+.rsvp {
+    background: linear-gradient(135deg, #9c27b0, #7b1fa2);
+    color: white;
+}
+
+/* Section Titles */
+.section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.section p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+/* RSVP Button */
+.rsvp-btn {
+    background-color: #ff6a00;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.rsvp-btn:hover {
+    background-color: #ff9800;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Add smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 10px;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
+
+    .rsvp-btn {
+        font-size: 1.2rem;
+        padding: 12px 24px;
+    }
+}
