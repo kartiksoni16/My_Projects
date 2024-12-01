@@ -142,6 +142,12 @@ body {
     border: 1px solid #ccc;
     margin-bottom: 20px;
 }
+.contact-section{
+     background: linear-gradient(-45deg,  #ff004f, #f50606, #d9fe06), #4f0475;
+    background-size: 400% 400%;
+    animation: gradient-animation 10s ease infinite;
+
+}
 
 .contact-section button {
     padding: 10px 20px;
@@ -152,8 +158,10 @@ body {
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s ease;
+    /* background: linear-gradient(-45deg, #6a11cb, #7112a8, #ff6a00, #ff004f, #f50606, #d9fe06), #4f0475;
+    background-size: 400% 400%; */
 }
 
 .contact-section button:hover {
-    background-color: #2575fc;
+    background-color: #12fe45;
 }
