@@ -14,3 +14,5 @@ document.getElementById("contactLink").addEventListener("click", function(event)
         contactSection.style.display = "none";
     }
 });
+
+
